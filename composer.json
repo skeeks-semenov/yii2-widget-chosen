@@ -1,8 +1,8 @@
 {
     "name": "skeeks/yii2-widget-chosen",
-    "type": "yii2-extension",
     "description": "Bootstrap Chosen widget for Yii2",
     "keywords": ["yii2", "extension", "widget", "chosen", "bootstrap", "bootstrap 3", "skeeks"],
+    "type": "yii2-extension",
     "homepage": "http://www.skeeks.com/",
     "license": "BSD 3-Clause",
     "support": {
