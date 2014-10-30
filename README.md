@@ -73,7 +73,7 @@ use skeeks\widget\chosen\Chosen;
 To override default placeholder strings you can add translated messages for `Select an option` (single select) and `Select some options` (multiple select) to your application message file. By default widget will use 'app' category to translate this strings, but you can set your own category by changing `translateCategory` option in widget configuration. For example, you can write this in application config file:
 ```
 <?php
-\Yii::$container->set('nex\chosen\Chosen', [
+\Yii::$container->set('skeeks\widget\chosen\Chosen', [
     'translateCategory' => 'my-app',
 ]);
 ```
