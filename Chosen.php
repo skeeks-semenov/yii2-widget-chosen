@@ -82,9 +82,11 @@ class Chosen extends InputWidget
         } else {
             $this->clientOptions['disable_search_threshold'] = $this->disableSearch;
         }
-        $this->clientOptions['placeholder_text_single'] = \Yii::t($this->translateCategory, $this->placeholder ? $this->placeholder : 'Select an option');
-        $this->clientOptions['placeholder_text_multiple'] = \Yii::t($this->translateCategory, $this->placeholder ? $this->placeholder : 'Select some options');
-        $this->clientOptions['no_results_text'] = \Yii::t('app', 'No results match');
+        
+        $this->clientOptions['placeholder_text_single'] = \Yii::t($this->translateCategory, $this->placeholder ? $this->placeholder : 'Выбирите опцию');
+        $this->clientOptions['placeholder_text_multiple'] = \Yii::t($this->translateCategory, $this->placeholder ? $this->placeholder : 'Выбирите несколько опций');
+        $this->clientOptions['no_results_text'] = \Yii::t('app', 'Результатов не найдено');
+        
         $this->options['unselect'] = null;
         $this->registerScript();
         $this->registerEvents();
