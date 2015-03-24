@@ -39,6 +39,11 @@ class Chosen extends InputWidget
     public $disableSearch = 10;
 
     /**
+     * @var bool
+     */
+    public $disabled        = false;
+    
+    /**
      * @var string placeholder text
      */
     public $placeholder = null;
@@ -88,6 +93,10 @@ class Chosen extends InputWidget
         $this->clientOptions['no_results_text'] = \Yii::t('app', 'Результатов не найдено');
         
         $this->options['unselect'] = null;
+        if ($this->disabled)
+        {
+            $this->options['disabled'] = 'disabled';
+        }
         $this->registerScript();
         $this->registerEvents();
     }
