@@ -18,18 +18,13 @@ use yii\web\AssetBundle;
  */
 class ChosenAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/skeeks/yii2-widget-chosen/assets';
-
-    public $css = [
-        'css/chosen.bootstrap.css'
-    ];
+    public $sourcePath = '@bower/chosen';
 
     public $js = [
-        'js/chosen.jquery.js'
+        'chosen.jquery.min.js'
     ];
 
     public $depends = [
-        'yii\bootstrap\BootstrapAsset',
         'yii\web\JqueryAsset',
     ];
 }
