@@ -77,7 +77,7 @@ class Chosen extends InputWidget
     {
         parent::init();
         if ($this->multiple) {
-            $this->options['multiple'] = true;
+            $this->options['multiple'] = 'multiple';
         } elseif ($this->allowDeselect) {
             $this->items = ArrayHelper::merge([null => ''], $this->items);
             $this->clientOptions['allow_single_deselect'] = true;
@@ -107,8 +107,10 @@ class Chosen extends InputWidget
     public function run()
     {
         if ($this->hasModel()) {
+            echo Html::hiddenInput(Html::getInputName($this->model, $this->attribute)); //TODO:bad hardcode
             echo Html::activeListBox($this->model, $this->attribute, $this->items, $this->options);
         } else {
+            echo Html::hiddenInput($this->name); //TODO:bad hardcode
             echo Html::listBox($this->name, $this->value, $this->items, $this->options);
         }
     }
