@@ -18,10 +18,10 @@ use yii\web\AssetBundle;
  */
 class ChosenAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/chosen';
+    public $sourcePath = '@vendor/skeeks/yii2-widget-chosen/src/chosen_v1.6.2';
 
     public $js = [
-        'chosen.jquery.min.js'
+        'chosen.jquery.min'
     ];
 
     public $depends = [
