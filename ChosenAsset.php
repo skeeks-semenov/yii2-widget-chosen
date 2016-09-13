@@ -21,7 +21,7 @@ class ChosenAsset extends AssetBundle
     public $sourcePath = '@vendor/skeeks/yii2-widget-chosen/src/chosen_v1.6.2';
 
     public $js = [
-        'chosen.jquery.min'
+        'chosen.jquery.min.js'
     ];
 
     public $depends = [
