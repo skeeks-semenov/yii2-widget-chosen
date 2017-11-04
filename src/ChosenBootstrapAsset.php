@@ -15,7 +15,7 @@ use yii\web\AssetBundle;
  */
 class ChosenBootstrapAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/skeeks/yii2-widget-chosen/src/chosen-bootstrap-1.1.0';
+    public $sourcePath = '@skeeks/widget/chosen/assets/chosen-bootstrap-1.1.0';
 
     public $css = [
         'chosen.bootstrap.min.css',
