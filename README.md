@@ -92,6 +92,10 @@ use skeeks\widget\chosen\Chosen;
 ```
 
 
-> [![skeeks!](https://gravatar.com/userimage/74431132/13d04d83218593564422770b616e5622.jpg)](http://www.skeeks.com)  
-<i>Web development has never been so fun!</i>  
-[www.skeeks.com](http://www.skeeks.com)
+___
+
+> [![skeeks!](https://skeeks.com/img/logo/logo-no-title-80px.png)](https://skeeks.com)  
+<i>SkeekS CMS (Yii2) — quickly, easily and effectively!</i>  
+[skeeks.com](https://skeeks.com) | [cms.skeeks.com](https://cms.skeeks.com)
+
+
