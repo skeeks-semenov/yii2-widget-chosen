@@ -1,6 +1,10 @@
 CHANGELOG
 ==============
 
+1.2.1
+-----------------
+  * Updating choosen to 1.8.2
+  
 1.2.0
 -----------------
   * Updating choosen to 1.8
