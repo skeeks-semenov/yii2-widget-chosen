@@ -4,7 +4,7 @@
     "keywords": ["yii2", "extension", "widget", "chosen", "bootstrap", "bootstrap 3", "skeeks"],
     "type": "yii2-extension",
     "homepage": "http://www.skeeks.com/",
-    "license": "BSD 3-Clause",
+    "license": "BSD-3-Clause",
     "support": {
         "issues": "http://www.skeeks.com/",
         "wiki": "http://git.skeeks.com/skeeks/yii2-widget-chosen/blob/master/README.md",
