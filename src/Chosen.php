@@ -23,6 +23,9 @@ use yii\widgets\InputWidget;
  */
 class Chosen extends InputWidget
 {
+
+    public static $autoIdPrefix = 'Chosen';
+
     /**
      * @var boolean whether to render input as multiple select
      */
