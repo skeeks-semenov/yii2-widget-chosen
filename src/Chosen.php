@@ -79,6 +79,7 @@ class Chosen extends InputWidget
     public function init()
     {
         parent::init();
+        
         if ($this->multiple) {
             $this->options['multiple'] = 'multiple';
         } elseif ($this->allowDeselect) {
@@ -100,8 +101,7 @@ class Chosen extends InputWidget
         {
             $this->options['disabled'] = 'disabled';
         }
-        $this->registerScript();
-        $this->registerEvents();
+        
     }
 
     /**
@@ -109,13 +109,18 @@ class Chosen extends InputWidget
      */
     public function run()
     {
+        $this->registerScript();
+        $this->registerEvents();
+        
         if ($this->hasModel()) {
-            echo Html::hiddenInput(Html::getInputName($this->model, $this->attribute)); //TODO:bad hardcode
-            echo Html::activeListBox($this->model, $this->attribute, $this->items, $this->options);
+            $result = Html::hiddenInput(Html::getInputName($this->model, $this->attribute)); //TODO:bad hardcode
+            $result .= Html::activeListBox($this->model, $this->attribute, $this->items, $this->options);
         } else {
-            echo Html::hiddenInput($this->name); //TODO:bad hardcode
-            echo Html::listBox($this->name, $this->value, $this->items, $this->options);
+            $result = Html::hiddenInput($this->name); //TODO:bad hardcode
+            $result .= Html::listBox($this->name, $this->value, $this->items, $this->options);
         }
+        
+        return $result;
     }
 
     /**
