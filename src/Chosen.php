@@ -18,6 +18,7 @@ use yii\web\JsExpression;
 use yii\widgets\InputWidget;
 
 /**
+ * @deprecated 
  * Class Chosen
  * @package skeeks\widget\chosen
  */
